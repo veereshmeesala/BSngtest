@@ -17,6 +17,10 @@
             vm.id = next.params.id;
             vm.login = next.params.login;
             vm.name = next.params.name;
+            // vm.forks = next.params.forks;
+            // vm.open_issues = next.param.openIssues;
+            // vm.watchers = next.param.watchers;
+            
             fetchIssues($http, vm.login, vm.name).then(function(results) {
                 vm.listIssues = results.items;    
             });
