@@ -1,0 +1,24 @@
+<div vertilize-container>
+  <form class="form-inline">
+    <div class="form-group">
+      <label for="searchRepo">Search</label>
+      <input type="text" class="form-control" placeholder="Search Resrepositories" ng-model="vm.search">
+    </div>
+
+    <button type="button" class="btn btn-default" ng-click="vm.loadRepo()">Search</button>
+  </form>
+  <div ng-repeat="repo in vm.repositories">
+    <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="{{repo.owner.avatar_url}}" class="img-responsive" alt="">
+                    <div class="caption">
+                        <h3>{{repo.name}}</h3>
+                        <p class="truncate"> {{repo.description}}</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">View Issues</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+  </div>
+</div>
