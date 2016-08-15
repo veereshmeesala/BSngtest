@@ -1,0 +1,31 @@
+<div>
+
+
+
+
+
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">
+            Issues for {{vm.name}}
+        </div>
+        <div class="panel-body">
+
+            <!-- List group -->
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="issue in vm.listIssues">
+                    <div class="row">
+                        <div class="col-md-10">
+                            Title: {{issue.title}}
+                        </div>
+                        <div>
+                            State: {{issue.state}}
+                        </div>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>

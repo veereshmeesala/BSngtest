@@ -8,6 +8,7 @@
         $routeConfig: [
             { path: "/repo", component:"repoList", name: "Repositories" },
             { path: "/dashboard", component: "dashboard", name: "Dashboard" },
+            { path: "/repoissues/:id/", component: "repoIssues", name:"RepoIssues"},
             { path: "/**", redirectTo: ["Repositories", ""] }
         ]                   
     });

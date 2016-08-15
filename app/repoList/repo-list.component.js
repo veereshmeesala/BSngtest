@@ -28,12 +28,16 @@
                 vm.repositories = repos.items;    
             });
         };
+
+        // vm.goToIssue = function(id, login, name) {
+        //     vm.$router.navigate(["RepoIssues", {id:id}]);  
+        // };
        
     }
 
     module.component("repoList", {
-        binding:{
-            
+        bindings: {
+            "$router": "<"
         },
         templateUrl: "/app/repoList/repo-list.component.html",
         controllerAs: "vm",

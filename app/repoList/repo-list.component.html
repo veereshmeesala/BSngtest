@@ -1,4 +1,4 @@
-<div vertilize-container>
+<div>
   <form class="form-inline">
     <div class="form-group">
       <label for="searchRepo">Search</label>
@@ -9,16 +9,20 @@
   </form>
   <div ng-repeat="repo in vm.repositories">
     <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="{{repo.owner.avatar_url}}" class="img-responsive" alt="">
-                    <div class="caption">
-                        <h3>{{repo.name}}</h3>
-                        <p class="truncate"> {{repo.description}}</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">View Issues</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+      <div class="thumbnail">
+        <img src="{{repo.owner.avatar_url}}" class="img-responsive" alt="">
+        <div class="caption">
+          <h3 class="truncate">{{repo.name}}</h3>
+          <p class="truncate"> {{repo.description}}</p>
+          <p>
+            <a class="btn btn-default" ng-link="['RepoIssues', { id:repo.id, login: repo.owner.login, name: repo.name}]">
+                    View Issues
+                </a>
+
+            <a href="#" class="btn btn-default">More Info</a>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
