@@ -140,3 +140,18 @@ accordion .ng-leave {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.marginB20{
+  margin-bottom: 20px;
+}
+
+.filterSection{
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+.hero-feature .thumbnail img{
+  width: 250px;
+  height: 250px;
+}
+}

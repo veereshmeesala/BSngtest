@@ -1,27 +1,32 @@
 <div>
-  <form class="form-inline">
-    <div class="form-group">
-      <label for="searchRepo">Search</label>
-      <input type="text" class="form-control" placeholder="Search Resrepositories" ng-model="vm.search">
+  <div class="row marginB20">
+    <form name="form">
+    <div class="col-md-10">
+      <input type="text" class="form-control" placeholder="Search Resrepositories" ng-model="vm.search" required>
     </div>
 
-    <button type="button" class="btn btn-default" ng-click="vm.loadRepo()">Search</button>
-  </form>
-  <div ng-repeat="repo in vm.repositories">
-    <div class="col-md-3 col-sm-6 hero-feature">
-      <div class="thumbnail">
-        <img src="{{repo.owner.avatar_url}}" class="img-responsive" alt="">
-        <div class="caption">
-          <h3 class="truncate">{{repo.name}}</h3>
-          <p class="truncate"> {{repo.description}}</p>
-          <p>
-            <a class="btn btn-default" ng-link="['RepoIssues', { id:repo.id, login: repo.owner.login, name: repo.name}]">
+    <button type="button" class="btn btn-primary col-md-2" ng-disabled="form.$invalid"  ng-click="vm.loadRepo()">Search</button>
+    
+    </form>
+  </div>
+  <div class="row">
+      <div ng-repeat="repo in vm.repositories" class="col-md-3 col-sm-6 hero-feature">
+        <div >
+          <div class="thumbnail">
+            <img src="{{repo.owner.avatar_url}}" alt="">
+            <div class="caption">
+              <h3 class="truncate">{{repo.name}}</h3>
+              <p class="truncate"> {{repo.description}}</p>
+              <p>
+                <a class="btn btn-default" ng-link="['RepoIssues', { id:repo.id, login: repo.owner.login, name: repo.name}]">
                     View Issues
                 </a>
-             <button type="button" class="btn btn-default" ng-click="vm.goToDashboard(repo.forks, repo.open_issues, repo.watchers)">Dashboard</button>
-          </p>
+                <button type="button" class="btn btn-default"  ng-click="vm.goToDashboard(repo.forks, repo.open_issues, repo.watchers)">Dashboard</button>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
   </div>
+
 </div>

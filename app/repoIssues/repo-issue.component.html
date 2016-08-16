@@ -5,19 +5,19 @@
     <div class="col-md-6">
     </div>
 </div>-->
-
+<div class="row">
+    <div class="col-md-6">
+                <h2 >Issues for {{vm.name}}</h2>
+            </div>
+     <div class="col-md-6 filterSection">
+                <span class="pull-right">Filter: <input ng-model="issueName" /> </span>
+    </div>
+</div>
 <div class="row">
     <div class="col-md-12">
-        <div class="panel panel-default">
-            <!-- Default panel contents -->
-            <div class="panel-heading">
-                Issues for {{vm.name}}
-            </div>
-            <div class="panel-body">
-
-                <!-- List group -->
+           <!-- List group -->
                 <ul class="list-group">
-                    <li class="list-group-item" ng-repeat="issue in vm.listIssues">
+                    <li class="list-group-item" ng-repeat="issue in vm.listIssues | filter: issueName">
                         <div class="row">
                             <div class="col-md-10">
                                 Title: {{issue.title}}
@@ -29,7 +29,5 @@
                         </div>
                     </li>
                 </ul>
-            </div>
-        </div>
     </div>
 </div>
