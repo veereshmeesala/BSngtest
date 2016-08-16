@@ -11,3 +11,10 @@ bower install
 npm install -g http-server
 
 http-server
+
+
+# Pending Items
+
+UI Tweaks
+
+Adding different graphs for watchers....
