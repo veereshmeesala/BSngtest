@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-md-6">
+    
+     <just-gage id="test2" min=0 max=10000 value="vm.watchers" title="Watchers" donut=true ></just-gage>
+  </div>
+  <div class="col-md-6">
+    <just-gage id="test1" min=0 max=10000 value="vm.issues" title="Open Issues"></just-gage>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+   <bar-chart forks="{{vm.forks}}" issues="{{vm.issues}}" watchers="{{vm.watchers}}"></bar-chart>
+  </div>
+  <div class="col-md-6">
+    
+  </div>
+</div>

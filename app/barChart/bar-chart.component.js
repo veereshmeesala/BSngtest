@@ -19,14 +19,6 @@
         };
 
         vm.$onInit= function () {
-            // angular.forEach(vm.specs.bars, function(item){
-            //     for(var i=0; i < vm.values.length; i++){
-            //         // if(item.text == vm.values[i].key){
-            //         //     item.width = vm.values[i].value/;
-            //         // }
-            //         console.log(vm.values[i].key);
-            //     }
-            // });
             var ctx = document.createElement('canvas').getContext('2d');
             var gradients = [];
 
@@ -52,7 +44,9 @@
 
     module.component("barChart", {
         bindings:{
-            values: "<"
+            forks: "@",
+            issues: "@",
+            watchers: "@"
         },
         templateUrl: "/app/barChart/bar-chart.component.html",
         controllerAs: "vm",

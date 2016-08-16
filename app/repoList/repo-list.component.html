@@ -18,8 +18,7 @@
             <a class="btn btn-default" ng-link="['RepoIssues', { id:repo.id, login: repo.owner.login, name: repo.name}]">
                     View Issues
                 </a>
-
-            <a href="#" class="btn btn-default">More Info</a>
+             <button type="button" class="btn btn-default" ng-click="vm.goToDashboard(repo.forks, repo.open_issues, repo.watchers)">Dashboard</button>
           </p>
         </div>
       </div>

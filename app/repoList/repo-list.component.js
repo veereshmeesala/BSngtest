@@ -29,9 +29,9 @@
             });
         };
 
-        // vm.goToIssue = function(id, login, name) {
-        //     vm.$router.navigate(["RepoIssues", {id:id}]);  
-        // };
+        vm.goToDashboard = function(forks, openIssues, watchers) {
+            vm.$router.navigate(["Dashboard", {forks: forks, issues: openIssues, watchers: watchers}]);  
+        };
        
     }
 
