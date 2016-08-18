@@ -14,15 +14,9 @@
 
         };
 
+        
+
         vm.$OnInit = function () {
-            // vm.dflt = {
-            //     min: 0,
-            //     max: 200,
-            //     donut: true,
-            //     gaugeWidthScale: 0.6,
-            //     counter: true,
-            //     hideInnerShadow: true
-            // }
 
         };
     }

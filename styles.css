@@ -155,3 +155,29 @@ accordion .ng-leave {
   height: 250px;
 }
 }
+
+.countWidget{
+   text-align: center; padding-top: 20px; padding-bottom: 20px; 
+}
+
+.countWidget p.count{
+  font-weight: 700; font-size: 32px;
+
+}
+
+.countWidgetGreenBg{
+background-color: #0ADCD5;
+color: #fff;
+}
+
+.countWidgetGreyBg{
+background-color: #f7f7f7;
+color: #3b3b3b;
+}
+
+.countWidgetBlueBg{
+background-color: #337ab7;
+color: #fff;
+}
+
+

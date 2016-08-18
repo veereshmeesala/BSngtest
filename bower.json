@@ -18,6 +18,7 @@
     "angular-animate": "~1.5.3",
     "animate.css": "~3.5.1",
     "angular-justgage": "^1.0.1",
-    "justgage-toorshia": "justgage-official#^1.2.2"
+    "justgage-toorshia": "justgage-official#^1.2.2",
+    "angular-gage": "^0.1.0"
   }
 }
