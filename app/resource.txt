@@ -22,3 +22,9 @@ Charts help Links
 http://justgage.com/
 
 http://fiddle.jshell.net/witepo/p5fjua6w/
+
+
+Dashboard page Reference
+=================
+
+https://www.template.net/web-templates/website-templates/angularjs-template/

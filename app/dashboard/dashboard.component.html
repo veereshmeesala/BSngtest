@@ -22,9 +22,20 @@
     </div>
   </div>
   <div class="col-md-6">
-    <div style="width:200px; height:160px;">
-      <just-gage id="test2" min=0 max=1000 value="vm.watchers" title="Watchers" donut=true></just-gage>
+    <div class="row">
+        <div class="col-md-6" style="width:200px; height:160px;">
+          <just-gage id="test2" min=0 max=1000 value="vm.watchers" title="Watchers" donut=true></just-gage>
+        </div>
+        <div class="col-md-6">
+          <app-gauge id="{{vm.id}}" ></app-gauge>
+        </div>
     </div>
+    <!--<div style="width:200px; height:160px;">
+      
+    </div>
+    <div>
+
+    </div>-->
     
   </div>
 </div>
